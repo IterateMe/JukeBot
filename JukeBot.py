@@ -67,7 +67,7 @@ def close_RPi(self):
         subprocess.call("sudo poweroff", shell=True)
 
 def choose_language():
-    """ This function determines the directory of .mp3 files to read from (english or french)"""
+    """ This function determines the directory of .mp3 files to read from (english or french). It runs as a threaded callback"""
     global french_song_directory
     global english_song_directory
     global actual_song_directory
@@ -89,14 +89,15 @@ def read_random_mp3(song_list):
     path = actual_song_directory + track
     p = vlc.MediaPlayer(path)
     p.play()
-    # Move from unred to red list
+
+    # Move the played track from the unred to the red list
     song_list[1].append(track)
     song_list[0].remove(track)
 
 def order_files_list(path, song_list):
     """ Refresh the list of .mp3 files that have been red, not red and possibly added """
 
-    # Add a new file to the list that might have been put in the repository
+    # Initialize the song list OR add new .mp3 files to the list that might have been put in the repository
     for r,d,f in os.walk(path):
         for file in f:
             if ".mp3" in file and file not in song_list[0] and file not in song_list[1]:
@@ -107,19 +108,19 @@ def order_files_list(path, song_list):
         if track in song_list[0]:
             song_list[0].remove(track)
 
-    # If all songs havebeen red, then all the "red" songs come back to the unred list
+    # If all songs have been red, then all the "red" songs come back to the unred list
     if not bool(song_list[0]):
         song_list[0] = song_list[1]
         song_list[1].clear()
 
 def bling_bling(self):
-    """ This function run as a threaded callback when money enter the coin recepter """
-
+    """ This is the main function run as a threaded callback when money enter the coin recepter """
+    
+    # The led in the eyes turn on
     GPIO.output(pin_led, 1)
 
     global english_song_list
     global french_song_list
-
 
     # Run the "order_files_list()" function in order to refresh the list of .mp3 files that have been red, not red and possibly added
     # Then, play a random .mp3 file
@@ -130,9 +131,7 @@ def bling_bling(self):
         order_files_list(actual_song_directory, french_song_list)
         read_random_mp3(french_song_list)
     
-
-
-
+    # The led in the eyes of the robot turn off
     GPIO.output(pin_led, 0)
     
 
