@@ -2,7 +2,7 @@
 
 STEPS TO SETUP THE RPi FOR THIS PROGRAM:
 
-1) Update & Upgrade
+1) Update, Upgrade & enable audio output
 
 2) install git:
         sudo apt-get install git
