@@ -26,8 +26,8 @@ def setup():
     global english_song_list
 
     # This is the list of directory where all the .mp3 files are located
-    french_song_directory = "/path/to/directory"            ### ENTER YOUR DIRECTORY HERE ### WITH DOUBLE SLASHES "//" INSTEAD OF SINGLE ONES
-    english_song_directory = "/path/to/directory"           ### ENTER YOUR DIRECTORY HERE ### WITH DOUBLE SLASHES "//" INSTEAD OF SINGLE ONES
+    french_song_directory = "//path//to//directory"            ### ENTER YOUR DIRECTORY HERE ### WITH DOUBLE SLASHES "//" INSTEAD OF SINGLE ONES
+    english_song_directory = "//path//to//directory"           ### ENTER YOUR DIRECTORY HERE ### WITH DOUBLE SLASHES "//" INSTEAD OF SINGLE ONES
     actual_song_directory = english_song_directory          # The default song directory is the english one... sorry law 101
 
     # This is the lists for .mp3 files in the french or english directory: [[NOT RED], [ALREADY RED]] -- They will be initialised or refreshed each time the order_files_list() function is called
@@ -132,7 +132,7 @@ def bling_bling(self):
         order_files_list(actual_song_directory, french_song_list)
         read_random_mp3(french_song_list)
     
-    # The led in the eyes of the robot turn off
+    # The led in the eyes of the robot turn off at the end of the song play
     GPIO.output(pin_led, 0)
     
 
