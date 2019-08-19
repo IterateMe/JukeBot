@@ -9,6 +9,7 @@ import random
 import vlc
 import RPi.GPIO 
 
+# TEST ADD
 
 def setup():
     """ This function initialise the GPIO pins for the program in order to run properly """
