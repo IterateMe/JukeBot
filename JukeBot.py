@@ -6,6 +6,7 @@ import subprocess
 import os
 import random
 
+import vlc
 import RPi.GPIO 
 
 
