@@ -1,6 +1,6 @@
 # JukeBot
 ##### Design by Emily Cote-Desbiens
-##### Python code by Vianney Gall @github\IterateMe  
+##### Python code by Vianney Gall @github\IterateMe<br>
   
   
 **STEPS TO SETUP THE RPi FOR THIS APP:**
