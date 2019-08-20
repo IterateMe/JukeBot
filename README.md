@@ -15,7 +15,7 @@
 >       $ sudo apt-get install python3-pip
 
 4) install the relevent libraries:
-> # For reading .mp3 files (reference: https://pypi.org/project/python-vlc/ )
+> For reading .mp3 files (reference: https://pypi.org/project/python-vlc/ )
 >       $ pip install python-vlc      
 
         
