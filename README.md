@@ -3,10 +3,13 @@
 ##### Python code by Vianney Gall @github\IterateMe
 <br>
 <br>
+
 **STEPS TO SETUP THE RPi FOR THIS APP:**
 (From the command prompt)
 <br>
+
 1) Update, Upgrade & enable audio output
+<br>
 
 2) install git:
 >       $ sudo apt-get install git
