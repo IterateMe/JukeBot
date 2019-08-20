@@ -3,6 +3,7 @@
 ### Python code by Vianney Gall @github\IterateMe
 
 **STEPS TO SETUP THE RPi FOR THIS APP:**
+(From the command prompt)
 
 1) Update, Upgrade & enable audio output
 
