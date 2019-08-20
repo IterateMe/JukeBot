@@ -1,6 +1,6 @@
 "# JukeBot" 
 
-STEPS TO SETUP THE RPi FOR THIS PROGRAM:
+STEPS TO SETUP THE RPi FOR THIS APP:
 
 1) Update, Upgrade & enable audio output
 
