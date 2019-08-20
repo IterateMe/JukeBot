@@ -22,7 +22,7 @@
 
 4) install the relevent libraries:
 >       $ pip install python-vlc
-&nbsp;&nbsp; For reading .mp3 files (reference: https://pypi.org/project/python-vlc/ )
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For reading .mp3 files (reference: https://pypi.org/project/python-vlc/ )
 <br>    
 
 5) Clone this repo in your RPi:
