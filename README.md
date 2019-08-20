@@ -7,7 +7,7 @@
 1) Update, Upgrade & enable audio output
 
 2) install git:
-        > sudo apt-get install git
+> sudo apt-get install git
 
 3) install pip:
         > $ sudo apt-get install python-pip
