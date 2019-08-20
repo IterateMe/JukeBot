@@ -15,8 +15,8 @@
 >       $ sudo apt-get install python3-pip
 
 4) install the relevent libraries:
-> 1. For reading .mp3 files (reference: https://pypi.org/project/python-vlc/ )
->       - $ pip install python-vlc      
+>       $ pip install python-vlc
+For reading .mp3 files (reference: https://pypi.org/project/python-vlc/ )
 
         
 5) Clone this repo in your RPi:
