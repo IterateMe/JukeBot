@@ -67,7 +67,7 @@ def close_RPi(self):
         GPIO.cleanup()
         subprocess.call("sudo poweroff", shell=True)
 
-def choose_language():
+def choose_language(self):
     """ This function determines the directory of .mp3 files to read from (english or french). It runs as a threaded callback"""
     global french_song_directory
     global english_song_directory
